@@ -7,17 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
-protocol AppComponent {
+public protocol AppComponent {
     func open(url: URL, resultHandler: (UIViewController?) -> Void) -> Bool
     func canHandle(url: URL) -> Bool
 }
 
-protocol HudlComponent: AppComponent {
+public protocol HudlComponent: AppComponent {
     func canHandle(host: String, path: String) -> Bool
 }
 
-extension HudlComponent {
+public extension HudlComponent {
     func canHandle(url: URL) -> Bool {
         return url.scheme == "hudl" && canHandle(host: url.host!, path: url.path)
     }

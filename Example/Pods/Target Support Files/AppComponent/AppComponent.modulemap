@@ -1,6 +1,0 @@
-framework module AppComponent {
-  umbrella header "AppComponent-umbrella.h"
-
-  export *
-  module * { export * }
-}
