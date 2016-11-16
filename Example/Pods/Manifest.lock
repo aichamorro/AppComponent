@@ -1,0 +1,16 @@
+PODS:
+  - AppComponent (0.1.0)
+
+DEPENDENCIES:
+  - AppComponent (from `../`)
+
+EXTERNAL SOURCES:
+  AppComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppComponent: 0caaebf67c847379db8abf4b594fbeb3cb4b85d4
+
+PODFILE CHECKSUM: 5c3c3b5ce2a047d78b21d14b89a2176b4b2ce9e1
+
+COCOAPODS: 1.1.1
